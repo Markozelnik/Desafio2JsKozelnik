@@ -1,3 +1,77 @@
+/* voy a hacerlo en base a la entrega anterior tratando de ingresar mas datos*/
+
+    let salir = 0 
+
+    while (salir != 1){
+
+    let deporte = prompt (`Elija el numero del deporte: 
+    1.Futbol
+    2.Voleyball
+    3.Basquetball
+    4.Rugby
+    5.Salir`) 
+    
+    switch (deporte){
+        case "1":
+            console.log ("Usted a elejido Futbol");
+            break;
+
+        case "2":
+            console.log ("Usted a elejido Voleyball");
+            break;
+        
+        case "3":
+            console.log ("Usted a elejido Basquetball");
+            break;
+        
+        case "4":
+            console.log ("Usted a elejido Rugby");
+            break;
+
+        case "5":
+            alert("Adios");
+            salir = 1;
+            break;
+
+        default:
+            alert ("Usted no elijio ningun deporte");
+            break;
+    }
+}
+
+
+
+   if ( deporte == 1 || deporte == 2 || deporte == 3 || deporte == 4) {
+      
+
+        function eleccion (){
+
+        let eleccion = prompt (`
+        1.Desea ir al shop del deporte
+        2.Desea tener informacion del deporte`)
+
+        switch (eleccion) {
+            case "1":
+                console.log ("en un futuro ira un link directo al shop")
+                break;
+            case "2":
+                console.log ("En un futuro ira la informacion del equipo")
+                break;
+            
+            default:
+                alert ("usted no ingreso ninguna opcion")
+
+        } 
+
+    }
+
+
+    }
+
+    
+    console.log (eleccion)
+    
+      
 
 
 
