@@ -14,11 +14,25 @@ function eleccion(shop, informacion)
         case "1":
             console.log ("Usted a ingresado al Shop"); 
             console.log (shop);
+                        
+            /*aplique un for para el array de shop que esta abajo*/ 
+
+            for(const mercancia of shop){
+                console.log(mercancia.producto)
+                console.log(mercancia.precio)
+            }
 
             break;
         case "2":
             console.log ("Usted a ingresado a la informacion");
             console.log (informacion);
+            /*aplique un for para el array de informacion que esta abajo*/ 
+            for(const info of informacion){
+            console.log(info.futbol)
+            console.log(info.basquetball)
+            console.log(info.voley)
+            console.log(info.rugby)
+         }
             break;
         default:
             console.log ("No Ingreso ningun dato")
@@ -28,28 +42,28 @@ function eleccion(shop, informacion)
 }
   
  /*entrega de Arrays*/ 
-   
+   /*voy a hacer un slice para cada deporte, hay 3 cosas por cada deporte*/ 
    const shop  = [
-     {producto: "Camiseta del Psg", precio: 4000},
-     {producto: "Balon del Mundial Qatar 2022", precio: 900},
-     {producto: "Botines Nike Legend 9 Academy Tf ", precio: 2500},
-     {producto: "Balon Oficcial Nba", precio: 800},
-     {producto: "Camiseta oficial Golden State", precio: 2000},
-     {producto: "Nike Precision Iii Unisex-Adult", precio: 2000},
-     {producto: "Balon oficial Mundial de Voley", precio: 400},
-     {producto: "Camiseta de la seleccion Argentina", precio: 1100},
-     {producto: "Zapatillas Misuno ", precio: 1500},
-     {producto: "Balon oficial de Rugby championship", precio: 600},
-     {producto: "Camiseta de los Pumas", precio: 1300},
-     {producto: "Camiseta de los All Blacks", precio: 1500},
+     {producto: "Camiseta del Psg", precio: 4000},/*0*/ 
+     {producto: "Balon del Mundial Qatar 2022", precio: 900},/*1*/
+     {producto: "Botines Nike Legend 9 Academy Tf ", precio: 2500}, /*2*/
+     {producto: "Balon Oficcial Nba", precio: 800},/*3*/
+     {producto: "Camiseta oficial Golden State", precio: 2000},/*4*/
+     {producto: "Nike Precision Iii Unisex-Adult", precio: 2000},/*5*/
+     {producto: "Balon oficial Mundial de Voley", precio: 400},/*6*/
+     {producto: "Camiseta de la seleccion Argentina", precio: 1100},/*7*/
+     {producto: "Zapatillas Misuno ", precio: 1500},/*8*/
+     {producto: "Balon oficial de Rugby championship", precio: 600},/*9*/
+     {producto: "Camiseta de los Pumas", precio: 1300},/*10*/
+     {producto: "Camiseta de los All Blacks", precio: 1500},/*11*/
    ]
 
    /*para el proyecto final no se como voy a hacer con la historia o la actualidad de la informacion de cada deporte pero aca lo hare que sea algo fuera del shop*/
    const informacion = [
-    {Futbol: "Informacion de futbol"},
-    {Basquetball: "Informacion de Basquetball"},
-    {Voley: "Informacion de Voleyl"},
-    {Rugby: "Informacion de Rugby"},
+    {futbol: "Informacion de futbol"},/*0*/ 
+    {basquetball: "Informacion de Basquetball"},/*1*/ 
+    {voley: "Informacion de Voleyl"},/*3*/ 
+    {rugby: "Informacion de Rugby"},/*4*/ 
    ]
 
    /*ahora tengo que concer cada arry con su deporte y seleccion cuales productos son de ese shop y lo mismo con la informacion*/ 
@@ -68,33 +82,34 @@ function eleccion(shop, informacion)
     5.Salir`) 
     
   
-    
+    /* por cada case voy agregar los prductos de cada deporte*/ 
     switch (deporte){
         case "1":
             console.log ("Usted a elejido Futbol");
-            shop= "Una camiseta vale $300"
-            informacion="Es el mejor deporte"
+            const deportFut = shop.slice(0,3)
+            const inforFut = informacion.slice (0,1)
             eleccion(shop,informacion)
             break;
 
         case "2":
             console.log ("Usted a elejido Voleyball");
-            shop= "Una pelota vale $700"
-            informacion="Se juega con las manos"
+            const deportBas = shop.slice(3,6)
+            const infoBas = informacion.slice(1,2)
             eleccion(shop,informacion)
             break;
         
         case "3":
             console.log ("Usted a elejido Basquetball");
-            shop= "Una camiseta de la NBA vale $15000"
+            const deportVol = shop.slice (6,9)
+            const infoVol = informacion.slice (2,3)
             informacion="Es uno de los deportes mas famosos en Estados Unidos"
             eleccion(shop,informacion)
             break;
         
         case "4":
             console.log ("Usted a elejido Rugby");
-            shop= "La pelota oficial de los Pumas vale $5000"
-            informacion= "La liga mas importante del mundo es Premiership de Inglaterra"
+            const deportRug = shop.slice(9,12)
+            const infoRug = informacion.slice (4,5)
             eleccion(shop,informacion)
             break;
 
