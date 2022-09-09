@@ -2,6 +2,8 @@
 Ingresare una funcion que te lleve a otros dos lugares (Shop de ese deporte y Informacion de ese deporte)*/
 
 /*Solamente aplique textos en las opciones, en un futuro supongo que se podra conectar ese dato a un index html que sera de shop*/ 
+
+
 function eleccion(shop, informacion)
 {
     let opcion = prompt (`Elija el numero del deporte: 
@@ -12,6 +14,7 @@ function eleccion(shop, informacion)
         case "1":
             console.log ("Usted a ingresado al Shop"); 
             console.log (shop);
+
             break;
         case "2":
             console.log ("Usted a ingresado a la informacion");
@@ -24,6 +27,25 @@ function eleccion(shop, informacion)
     }
 }
   
+ /*entrega de Arrays*/ 
+   
+   const shop  = [
+     {producto: "Camiseta del Psg", precio: 4000},
+     {producto: "Balon del Mundial Qatar 2022", precio: 700},
+     {producto: "Botines Nike Legend 9 Academy Tf ", precio: 2500},
+     {producto: "Camiseta del Psg", precio: 500},
+     {producto: "Camiseta del Psg", precio: 500},
+     {producto: "Camiseta del Psg", precio: 500},
+     {producto: "Camiseta del Psg", precio: 500},
+     {producto: "Camiseta del Psg", precio: 500},
+     {producto: "Camiseta del Psg", precio: 500},
+     {producto: "Camiseta del Psg", precio: 500},
+     {producto: "Camiseta del Psg", precio: 500},
+     {producto: "Camiseta del Psg", precio: 500},
+   ]
+
+
+
 
 
     let salir = 0 
@@ -49,7 +71,7 @@ function eleccion(shop, informacion)
 
         case "2":
             console.log ("Usted a elejido Voleyball");
-            shop= "Una Una pelota vale $700"
+            shop= "Una pelota vale $700"
             informacion="Se juega con las manos"
             eleccion(shop,informacion)
             break;
@@ -82,60 +104,35 @@ function eleccion(shop, informacion)
     
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Aqui termina el proyecto, lo de abajo es practica*/ 
     
       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
