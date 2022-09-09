@@ -31,20 +31,28 @@ function eleccion(shop, informacion)
    
    const shop  = [
      {producto: "Camiseta del Psg", precio: 4000},
-     {producto: "Balon del Mundial Qatar 2022", precio: 700},
+     {producto: "Balon del Mundial Qatar 2022", precio: 900},
      {producto: "Botines Nike Legend 9 Academy Tf ", precio: 2500},
-     {producto: "Camiseta del Psg", precio: 500},
-     {producto: "Camiseta del Psg", precio: 500},
-     {producto: "Camiseta del Psg", precio: 500},
-     {producto: "Camiseta del Psg", precio: 500},
-     {producto: "Camiseta del Psg", precio: 500},
-     {producto: "Camiseta del Psg", precio: 500},
-     {producto: "Camiseta del Psg", precio: 500},
-     {producto: "Camiseta del Psg", precio: 500},
-     {producto: "Camiseta del Psg", precio: 500},
+     {producto: "Balon Oficcial Nba", precio: 800},
+     {producto: "Camiseta oficial Golden State", precio: 2000},
+     {producto: "Nike Precision Iii Unisex-Adult", precio: 2000},
+     {producto: "Balon oficial Mundial de Voley", precio: 400},
+     {producto: "Camiseta de la seleccion Argentina", precio: 1100},
+     {producto: "Zapatillas Misuno ", precio: 1500},
+     {producto: "Balon oficial de Rugby championship", precio: 600},
+     {producto: "Camiseta de los Pumas", precio: 1300},
+     {producto: "Camiseta de los All Blacks", precio: 1500},
    ]
 
+   /*para el proyecto final no se como voy a hacer con la historia o la actualidad de la informacion de cada deporte pero aca lo hare que sea algo fuera del shop*/
+   const informacion = [
+    {Futbol: "Informacion de futbol"},
+    {Basquetball: "Informacion de Basquetball"},
+    {Voley: "Informacion de Voleyl"},
+    {Rugby: "Informacion de Rugby"},
+   ]
 
+   /*ahora tengo que concer cada arry con su deporte y seleccion cuales productos son de ese shop y lo mismo con la informacion*/ 
 
 
 
