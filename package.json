@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "sass": "^1.54.9"
+  },
+  "name": "desafiojs2",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Markozelnik/Desafio2JsKozelnik.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Markozelnik/Desafio2JsKozelnik/issues"
+  },
+  "homepage": "https://github.com/Markozelnik/Desafio2JsKozelnik#readme",
+  "description": ""
+}

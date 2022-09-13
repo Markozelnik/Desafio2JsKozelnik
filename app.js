@@ -66,7 +66,7 @@ function eleccion(shop, informacion)
     {rugby: "Informacion de Rugby"},/*4*/ 
    ]
 
-   /*ahora tengo que concer cada arry con su deporte y seleccion cuales productos son de ese shop y lo mismo con la informacion*/ 
+   /*ahora tengo que conectar cada arry con su deporte y seleccion cuales productos son de ese shop y lo mismo con la informacion*/ 
 
 
 
@@ -102,7 +102,6 @@ function eleccion(shop, informacion)
             console.log ("Usted a elejido Basquetball");
             const deportVol = shop.slice (6,9)
             const infoVol = informacion.slice (2,3)
-            informacion="Es uno de los deportes mas famosos en Estados Unidos"
             eleccion(shop,informacion)
             break;
         
