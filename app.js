@@ -65,7 +65,7 @@ function eleccion(shop, informacion)
     {voley: "Informacion de Voleyl"},/*3*/ 
     {rugby: "Informacion de Rugby"},/*4*/ 
    ]
-
+   
    /*ahora tengo que conectar cada arry con su deporte y seleccion cuales productos son de ese shop y lo mismo con la informacion*/ 
 
 
@@ -127,8 +127,7 @@ function eleccion(shop, informacion)
 }
 
 
-
-
+ 
 
 
 
