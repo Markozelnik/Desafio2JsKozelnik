@@ -56,7 +56,7 @@ function eleccion(shop, informacion)
      {producto: "Balon oficial de Rugby championship", precio: 600},/*9*/
      {producto: "Camiseta de los Pumas", precio: 1300},/*10*/
      {producto: "Camiseta de los All Blacks", precio: 1500},/*11*/
-   ]
+   ];
 
    /*para el proyecto final no se como voy a hacer con la historia o la actualidad de la informacion de cada deporte pero aca lo hare que sea algo fuera del shop*/
    const informacion = [
@@ -127,22 +127,80 @@ function eleccion(shop, informacion)
 }
 
 
- 
+/*entrega de Dom*/
+/*para futbol*/
+const tiendaf = document.querySelector(".shopdeportesfut");
+const listasf = [
+    {id:1, titulo:"Camiseta del Psg", precio:4000},
+    {id:2, titulo:"Balon del Mundial Qatar 2022", precio:900},
+    {id:3, titulo:"Botines Nike Legend 9 Academy Tf", precio:2500},
+]
+
+for (lista of listasF){
+    let contenedor = document.createElement("li");
+    conetedor.innerHtml = `<h4> listas: ${listasf.titulo}</h4>
+    <p>precio: ${listasf.precio}</p>`;
+
+    document.body= appenChild (contenedor);
+}
+
+/*para shop basquet*/
+const tiendab = document.querySelector(".shopdeportesbas");
+const listasb = [
+    {id:1, titulo:"Balon Oficcial Nba", precio: 800},
+    {id:2, titulo:"Camiseta oficial Golden State", precio: 2000},
+    {id:3, titulo:"Nike Precision Iii Unisex-Adult", precio: 2000},
+]
+
+for (lista of listas){
+    let contenedor = document.createElement("li");
+    conetedor.innerHtml = `<h4> Listas: ${listasb.titulo}</h4>
+    <p>Precio: ${listasb.precio}</p>`;
+
+    document.body= appenChild (contenedor);
+}
 
 
 
+/*para shop voley*/
+const tiendav= document.querySelector(".shopdeportesvol");
+const listasv = [
+    {id:1, titulo:"Balon oficial Mundial de Voley", precio: 400},
+    {id:2, titulo:"Camiseta de la seleccion Argentina", precio: 1100},
+    {id:3, titulo:"Zapatillas Misuno ", precio: 1500},
+]
+
+for (lista of listas){
+    let contenedor = document.createElement("li");
+    conetedor.innerHtml = `<h4> listas: ${listasv.titulo}</h4>
+    <p>precio: ${listasv.precio}</p>`;
+
+    document.body= appenChild (contenedor);
+}
 
 
 
+/*para shop rugby*/
+const tiendar = document.querySelector(".shopdeportesrug");
+const listasr = [
+    {id:1, titulo:"Balon oficial de Rugby championship", precio: 600},
+    {id:2, titulo:"Camiseta de los Pumas", precio: 1300},
+    {id:3, titulo:"Camiseta de los All Blacks", precio: 1500},
+]
+
+for (lista of listas){
+    let contenedor = document.createElement("li");
+    conetedor.innerHtml = `<h4> listas: ${listasr.titulo}</h4>
+    <p>precio: ${listasr.precio}</p>`;
+
+    document.body= appenChild (contenedor);
+}
 
 
 
-
-
-
-
-
-
+/*
+    estoy viendo como hacer mi carrito todavia, no se me ocurre como hacerlo
+*/
 
 
 
