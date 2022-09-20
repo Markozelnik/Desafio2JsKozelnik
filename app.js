@@ -208,6 +208,33 @@ for (lista of listas){
 
 
 
+/*aplicando desafio de eventos en shop.html con una lista de busqueda*/ 
+
+
+
+const busqueda = document.querySelector("form")
+
+const busquedadep = document.querySelector (".busqueda")
+
+formulario.addEventListener ("submit", validarBusqueda)
+
+function validarBusqueda (e){
+    e.preventDefault()
+    console.log (`${busquedadep.value}`)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Aqui termina el proyecto, lo de abajo es practica*/ 
     
