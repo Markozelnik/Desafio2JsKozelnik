@@ -44,26 +44,26 @@ function eleccion(shop, informacion)
  /*entrega de Arrays*/ 
    /*voy a hacer un slice para cada deporte, hay 3 cosas por cada deporte*/ 
    const shop  = [
-     {producto: "Camiseta del Psg", precio: 4000},/*0*/ 
-     {producto: "Balon del Mundial Qatar 2022", precio: 900},/*1*/
-     {producto: "Botines Nike Legend 9 Academy Tf ", precio: 2500}, /*2*/
-     {producto: "Balon Oficcial Nba", precio: 800},/*3*/
-     {producto: "Camiseta oficial Golden State", precio: 2000},/*4*/
-     {producto: "Nike Precision Iii Unisex-Adult", precio: 2000},/*5*/
-     {producto: "Balon oficial Mundial de Voley", precio: 400},/*6*/
-     {producto: "Camiseta de la seleccion Argentina", precio: 1100},/*7*/
-     {producto: "Zapatillas Misuno ", precio: 1500},/*8*/
-     {producto: "Balon oficial de Rugby championship", precio: 600},/*9*/
-     {producto: "Camiseta de los Pumas", precio: 1300},/*10*/
-     {producto: "Camiseta de los All Blacks", precio: 1500},/*11*/
+     {producto: "Camiseta del Psg", precio: 4000},
+     {producto: "Balon del Mundial Qatar 2022", precio: 900},
+     {producto: "Botines Nike Legend 9 Academy Tf ", precio: 2500}, 
+     {producto: "Balon Oficcial Nba", precio: 800},
+     {producto: "Camiseta oficial Golden State", precio: 2000},
+     {producto: "Nike Precision Iii Unisex-Adult", precio: 2000},
+     {producto: "Balon oficial Mundial de Voley", precio: 400},
+     {producto: "Camiseta de la seleccion Argentina", precio: 1100},
+     {producto: "Zapatillas Misuno ", precio: 1500},
+     {producto: "Balon oficial de Rugby championship", precio: 600},
+     {producto: "Camiseta de los Pumas", precio: 1300},
+     {producto: "Camiseta de los All Blacks", precio: 1500},
    ];
 
    /*para el proyecto final no se como voy a hacer con la historia o la actualidad de la informacion de cada deporte pero aca lo hare que sea algo fuera del shop*/
    const informacion = [
-    {futbol: "Informacion de futbol"},/*0*/ 
-    {basquetball: "Informacion de Basquetball"},/*1*/ 
-    {voley: "Informacion de Voleyl"},/*3*/ 
-    {rugby: "Informacion de Rugby"},/*4*/ 
+    {futbol: "Informacion de futbol"},
+    {basquetball: "Informacion de Basquetball"},
+    {voley: "Informacion de Voleyl"},
+    {rugby: "Informacion de Rugby"},
    ]
    
    /*ahora tengo que conectar cada arry con su deporte y seleccion cuales productos son de ese shop y lo mismo con la informacion*/ 
