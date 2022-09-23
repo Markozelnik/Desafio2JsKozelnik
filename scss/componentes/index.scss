@@ -6,8 +6,7 @@
 /*logo principal del index*/
 .headerindex{
     display: flex;
-    margin: 30px 30px 30px 30px;
-    
+    margin: 30px 30px 30px 30px; 
 }
 /*div del logo*/
 .divlogoprin{
@@ -15,7 +14,6 @@
     align-items: flex-start;
     margin: 10px 10px 10px 10px ;
     cursor: pointer;
-    
 }
 /*imagen del logo*/
 .Logoprincipal{
@@ -23,7 +21,6 @@
     align-items: flex-start;
     border-radius: 60%;
     width: 80%;
-
 }
 
 /*parrafo de index*/
@@ -37,46 +34,100 @@
     cursor: pointer;
 }
 
+/*titulo de shop y informacion*/
+.sectiontiutlosshopinfo{
+    display: flex;
+    justify-content: center;
+}
+
+.divtextosobreimagnes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 140px 0px 180px;
+}
+
+.h3shopinfo{
+    display: flex;
+    justify-content: space-around;
+    font-size: 60px;
+    font-family:'Times New Roman', Times, serif;
+    color: aliceblue;
+    text-decoration:underline;
+}
+
 
 
 /*imagenes con animacion para ir al shop o la informacion de la aplicion*/
 /*section general*/
 .sectionprinfotos{
     display: flex;
+    margin: 10px 80px 70px 60px;
+    padding: 20px 20px 20px 20px;
 }
 
 
 /*div principales de imagenes*/
 .divgeneralsimagenes{
     display: flex;
+    margin-left: 30px;
 }
-
-
-/*div de titulos*/
-.divtitulos{
-    display: flex;
-}
-
-
-/*titulos css para cada titulo h3*/
-.titulosecciones{
-    display: flex;
-
-}
-
 
 /*div imagenes*/
 .divimagenes{
     display: flex;
-
 }
 
 
 /*ambas imagenes*/
 .imagens{
     display: flex;
-    width: 80%;
+    width: 90%;
+    border-radius: 10%;
+}
+
+/*aplicando animacion a las imagenes*/
+
+.foto:hover{
+    transform: scale(1.1);
+}
+
+.divgeneralsimagenes{
+    transition: all 2s;
 }
 
 
+/*carrusels*/
 
+.espaciocarru {
+    margin: 90px 90px 90px 90px;
+}
+
+
+/*footer y imagenes de redes sociales*/
+
+.footerprin{
+    display: flex;
+    margin: 40px 40px 40px 200px;
+    padding:20px 20px 20px 20px;
+}
+/*ul*/
+.ulredes{
+    display: flex;
+}
+/*navegacion*/
+.redes{
+    display: flex;
+}
+
+/*div de cada red social*/
+.divredes{
+    display: flex;
+}
+
+/*imagen de la red social*/
+
+.iconos{
+    width: 50%;
+    padding: 50px 50px 0px 50px;
+}
