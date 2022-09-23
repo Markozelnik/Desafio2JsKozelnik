@@ -1,3 +1,70 @@
+/*css para el body del index*/
+.bodygeneral {
+  background-color: rgb(3, 5, 44);
+}
 
+/*logo principal del index*/
+.headerindex {
+  display: flex;
+  margin: 30px 30px 30px 30px;
+}
+
+/*div del logo*/
+.divlogoprin {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+
+/*imagen del logo*/
+.Logoprincipal {
+  display: flex;
+  align-items: flex-start;
+  border-radius: 60%;
+  width: 80%;
+}
+
+/*parrafo de index*/
+.sectionparrakoprincipal {
+  margin: 50px 30px 30px 50px;
+  display: flex;
+  justify-content: center;
+  color: rgb(231, 236, 241);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/*imagenes con animacion para ir al shop o la informacion de la aplicion*/
+/*section general*/
+.sectionprinfotos {
+  display: flex;
+}
+
+/*div principales de imagenes*/
+.divgeneralsimagenes {
+  display: flex;
+}
+
+/*div de titulos*/
+.divtitulos {
+  display: flex;
+}
+
+/*titulos css para cada titulo h3*/
+.titulosecciones {
+  display: flex;
+}
+
+/*div imagenes*/
+.divimagenes {
+  display: flex;
+}
+
+/*ambas imagenes*/
+.imagens {
+  display: flex;
+  width: 80%;
+}
 
 /*# sourceMappingURL=style.css.map */
