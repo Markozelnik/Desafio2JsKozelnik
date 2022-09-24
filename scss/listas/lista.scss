@@ -2,3 +2,26 @@
     margin: 0%;
    padding: 0%;
 }
+
+/*titulos h2*/
+h2{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 30px 30px 30px;
+    font-size: 40px;
+}
+
+.disclaimer{
+    display: none;
+}
+
+/*parrafos generales*/
+p{
+    font-family: 'Nunito', sans-serif;
+    color: rgb(238, 226, 226);
+    font-size: 20px;
+
+    
+}
