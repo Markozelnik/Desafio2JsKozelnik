@@ -241,10 +241,40 @@ function validarBusqueda (e){
       
 
 
+/*ajemplo de shop las listas despeglables*/ 
+
+
+/*  <!--fin de zona header o logo-->
+<!--la idea era poner los 4 deportes linkeados con sus productos capaz hacerlo con un enlace interno que toquen el deporte y baje hasta su seccion-->
+   
+   
+   
+<!--nav con los deportes-->
 
 
 
+<nav class="navshop">
+    <ul class="ulshop">
+        <li class="navfutshop">
+            Futbol <a href="#futbol"> Ir a la seccion Futbol</a>
+        </li>
 
+        <li class="navbasqshop">
+            Basquetball <a href="#basquetball"></a>
+        </li>
+
+        <li class="navvolshop">
+            Voley <a href="#voley"></a>
+        </li>
+
+        <li class="navrugshop">
+            Rugby <a href="#rugby"></a>
+        </li>
+    </ul>
+</nav>
+
+<!--fin de nav-->
+*/ 
 
 
 

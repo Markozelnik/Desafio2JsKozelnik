@@ -26,6 +26,18 @@
   width: 20%;
 }
 
+/*carrito*/
+.divcarrito {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.carritoindex {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px;
+}
+
 /*parrafo de index*/
 .sectionparrakoprincipal {
   margin: 50px 30px 30px 50px;
@@ -168,6 +180,21 @@
   border-radius: 60%;
 }
 
+/*titulo shop*/
+.deportetituloshop {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 30px 30px 30px;
+  font-size: 50px;
+}
+
+/*precio color*/
+.colorprecio {
+  color: black;
+}
+
 * {
   margin: 0%;
   padding: 0%;
@@ -179,7 +206,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 30px 30px 30px;
+  margin: 50px 30px 30px 30px;
   font-size: 40px;
 }
 

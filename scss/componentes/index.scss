@@ -23,7 +23,17 @@
     border-radius: 60%;
     width: 20%;
 }
-
+/*carrito*/
+.divcarrito{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.carritoindex{
+   display: flex;
+   justify-content: flex-end;
+    margin: 5px;
+}
 /*parrafo de index*/
 
 .sectionparrakoprincipal{
