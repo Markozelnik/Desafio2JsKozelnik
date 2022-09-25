@@ -40,16 +40,16 @@ function eleccion(shop, informacion)
 
     }
 }
-  
+
  /*entrega de Arrays*/ 
    /*voy a hacer un slice para cada deporte, hay 3 cosas por cada deporte*/ 
    const shop  = [
-     {producto: "Camiseta del Psg", precio: 4000},
      {producto: "Balon del Mundial Qatar 2022", precio: 900},
-     {producto: "Botines Nike Legend 9 Academy Tf ", precio: 2500}, 
+     {producto: "Camiseta del Psg", precio: 4000},
+     {producto: "Botines Nike Legend 9 Academy Tf ", precio: 5000}, 
      {producto: "Balon Oficcial Nba", precio: 800},
      {producto: "Camiseta oficial Golden State", precio: 2000},
-     {producto: "Nike Precision Iii Unisex-Adult", precio: 2000},
+     {producto: "Nike Precision Iii Unisex-Adult", precio: 2500},
      {producto: "Balon oficial Mundial de Voley", precio: 400},
      {producto: "Camiseta de la seleccion Argentina", precio: 1100},
      {producto: "Zapatillas Misuno ", precio: 1500},
