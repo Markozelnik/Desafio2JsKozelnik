@@ -1,0 +1,16 @@
+/*css del carrito*/
+.carrito{
+    min-height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .table__productos{
+    display: flex;
+  }
+  .table__productos > img{
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+  }
