@@ -387,3 +387,29 @@ while (salir != 1){
         }
 
 }*/ 
+
+
+//ejmplo de carrito
+/*<br>
+<table #carritoshop class="table table-dark table-hover">
+  <thead>
+    <tr class="text-primary">
+      <th scope="col">#</th>
+      <th scope="col">Productos</th>
+      <th scope="col">Precio</th>
+    </tr>
+  </thead>
+  <tbody class="tbody">
+    
+  </tbody>
+</table>
+<br><br>
+<div class="row mx-4">
+  <div class="col">
+    <h3 class="itemCartTotal text-white">Total: 0</h3>
+  </div>
+  <div class="col d-flex justify-content-end">
+    <button class="btn btn-success">COMPRAR</button>
+  </div>
+</div>
+*/

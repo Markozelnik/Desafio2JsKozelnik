@@ -178,25 +178,6 @@
   text-decoration: none;
 }
 
-/*css del carrito*/
-.carrito {
-  min-height: 80vh;
-  max-width: 1000px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.table__productos {
-  display: flex;
-}
-
-.table__productos > img {
-  width: 9rem;
-  object-fit: contain;
-  border-radius: 6px;
-  margin-right: 20px;
-}
-
 /*shop html*/
 .Logoprincipalshop {
   display: flex;
@@ -239,6 +220,25 @@
   text-decoration: underline;
 }
 
+/*css del carrito*/
+.carrito {
+  min-height: 80vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.table__productos {
+  display: flex;
+}
+
+.table__productos > img {
+  width: 9rem;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+
 * {
   margin: 0%;
   padding: 0%;
@@ -263,6 +263,17 @@ p {
   font-family: "Nunito", sans-serif;
   color: rgb(238, 226, 226);
   font-size: 20px;
+}
+
+/*h6 en shop*/
+h6 {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 30px 30px 30px;
+  font-size: 30px;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
