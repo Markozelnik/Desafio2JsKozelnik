@@ -1,4 +1,5 @@
 //inicio de js en proyecto final 
+//traemos el titulo, imagen y precio de las cards
 const Clickbutton = document.querySelectorAll('.button')
 const tbody = document.querySelector('.tbody')
 let carrito = []
@@ -79,7 +80,7 @@ function renderCarrito(){
   })
   CarritoTotal()
 }
-
+//carrito
 function CarritoTotal(){
   let Total = 0;
   const itemCartTotal = document.querySelector('.itemCartTotal')
@@ -91,7 +92,7 @@ function CarritoTotal(){
   itemCartTotal.innerHTML = `Total $${Total}`
   addLocalStorage()
 }
-
+//remover los cards del carrito
 function removeItemCarrito(e){
   const buttonDelete = e.target
   const tr = buttonDelete.closest(".ItemCarrito")
@@ -113,14 +114,15 @@ function removeItemCarrito(e){
   tr.remove()
   CarritoTotal()
 }
-
+/*entrega operadores avanzados*/
+//sumaInput...
 function sumaCantidad(e){
   const sumaInput  = e.target
   const tr = sumaInput.closest(".ItemCarrito")
   const title = tr.querySelector('.title').textContent;
   carrito.forEach(item => {
     if(item.title.trim() === title){
-      sumaInput.value < 1 ?  (sumaInput.value = 1) : sumaInput.value;
+      sumaInput.value < 1 ?  (sumaInput.value = 1) : sumaInput.value;/*Aqui*/
       item.cantidad = sumaInput.value;
       CarritoTotal()
     }
@@ -138,3 +140,9 @@ window.onload = function(){
     renderCarrito()
   }
 }
+
+
+/*entrega operadores avanzados*/
+
+
+
