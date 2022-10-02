@@ -142,7 +142,13 @@ window.onload = function(){
 }
 
 
-/*entrega operadores avanzados*/
+/*entrega librerias*/
+// tengo que ver como hago para vaciar la suma una vez que se aprete el button de Comprar
+const boton = document.querySelector (".botonani")
+
+boton.addEventListener ("click", () =>{
+  swal("Excelente!", "Su compra fue realizada con exito!", "success");
+  })
 
 
 
