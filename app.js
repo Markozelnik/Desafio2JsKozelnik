@@ -26,9 +26,24 @@ function addToCarritoItem(e){
   addItemCarrito(newItem)
 }
 
+//intentando aplicar toastify Js
+/*
+const agregarprodu = document.querySelector(".aplicotosty")
 
+agregarprodu.addEventListener ("click", () =>{
+  Toastify({
+
+    text: "This is a toast",
+    
+    duration: 3000
+    
+    }).showToast();
+} )
+*/
+
+// trtar de aplicar tostify en agregar producto
 function addItemCarrito(newItem){
-
+  
   const alert = document.querySelector('.alert')
 
   setTimeout( function(){
