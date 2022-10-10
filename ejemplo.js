@@ -1,3 +1,32 @@
+//use este para ejemplos de las primeras clases no esta conectado con nada
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* voy a hacerlo en base a la entrega anterior pero tratando de ingresar mas datos
 Ingresare una funcion que te lleve a otros dos lugares (Shop de ese deporte y Informacion de ese deporte)*/
 

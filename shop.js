@@ -1,3 +1,11 @@
+//use este para practicar no esta conectado con nada
+
+
+
+
+
+
+
 //inicio de js en proyecto final 
 const addToShoppingCartButtons = document.querySelectorAll('.addToCart');
 addToShoppingCartButtons.forEach((addToCartButton) => {
