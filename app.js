@@ -168,6 +168,7 @@ boton.addEventListener ("click", () =>{
 
 
 //entrega fetch en mi proyecto
+/*
 const lista = document.querySelector(".entregafetch")
 
 fetch ("/data.json")
@@ -178,7 +179,8 @@ fetch ("/data.json")
       box.innerHTML:`
       <h5>${producto.nombre}</h5>
       <p>${producto.comentario}</p>
-      <P>${producto.precio}</P>
-      `
+      <P>${producto.precio}</P>`
+
     })
 }
+*/
