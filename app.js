@@ -167,3 +167,18 @@ boton.addEventListener ("click", () =>{
 
 
 
+//entrega fetch en mi proyecto
+const lista = document.querySelector(".entregafetch")
+
+fetch ("/data.json")
+.then((res) => res.json())
+.then((data))=>{
+    data.forEach(()=>{
+      const box = document.createElement("box")
+      box.innerHTML:`
+      <h5>${producto.nombre}</h5>
+      <p>${producto.comentario}</p>
+      <P>${producto.precio}</P>
+      `
+    })
+}
