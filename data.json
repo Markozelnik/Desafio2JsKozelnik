@@ -1,98 +1,97 @@
 [
     {
-    "id":"1",
-    "nombre": "Balon oficial Qatar 2022",
-    "imagen": "imagenes/Productos/2pelotaqatar.jpg",
-    "comentario":"Balon oficial de Qatar 2022.",
-    "precio":"900"
+    "type": "Futbol",
+    "description": "Balon oficial Qatar 2022",
+    "price":"900",
+    "available": true,
+    "source": "imagenes/Productos/2pelotaqatar.jpg"
     },
 
     {
-    "id":"2",
-    "nombre": "Camiseta PSG 2022",
-    "imagen": "imagenes/Productos/1psgcamiseta.jpg",
-    "comentario":"Camiseta oficial del PSG 2022.",
-    "precio":"4000"
+    "type": "Futbol",
+    "description": "Camiseta PSG 2022",
+    "price":"4000",
+    "available": true,
+    "source": "imagenes/Productos/1psgcamiseta.jpg"
     },
 
     {
-    "id":"3",
-    "nombre": "Botines Nike Legend",
-    "imagen": "imagenes/Productos/3botineNikeLegendAcademy.jpg",
-    "comentario":"Ultimo modelo de botines de Nike.",
-    "precio":"500"
+    "type": "Futbol",
+    "description": "Botines Nike Legend",
+    "price":"500",
+    "available": true,
+    "source": "imagenes/Productos/3botineNikeLegendAcademy.jpg"
     },
 
     {
-    "id":"4",
-    "nombre": "Balon NBA 2022",
-    "imagen": "imagenes/Productos/4balonnba.jpg",
-    "comentario":"Balon oficial para la temporada 2022 NBA.",
-    "precio":"800"
+    "type": "Basquetball",
+    "description": "Balon NBA 2022",
+    "price":"800",
+    "available": false,
+    "source": "imagenes/Productos/4balonnba.jpg"
     },
 
     {
-    "id":"5",
-    "nombre": "Camiseta Golden State",
-    "imagen": "imagenes/Productos/5goldenstate.jpg",
-    "comentario":"Camiseta oficial del ultimo campeon de la NBA.",
-    "precio":"2000"
+    "type": "Basquetball",
+    "description": "Camiseta Golden State",
+    "price":"2000",
+    "available": true,
+    "source": "imagenes/Productos/5goldenstate.jpg"
     },
 
     {
-    "id":"6",
-    "nombre": "Nike Precision Iii",
-    "imagen": "imagenes/Productos/6Nike Precisionnba.jpg",
-    "comentario":"Las Precision Iii son las mejores para deportes indor.",
-    "precio":"2500"
+    "type": "Basquetball",
+    "description": "Nike Precision Iii",
+    "price":"2500",
+    "available": true,
+    "source": "imagenes/Productos/6Nike Precisionnba.jpg"
     },
 
     {
-    "id":"7",
-    "nombre": "Balon oficial 2022",
-    "imagen": "imagenes/Productos/7balonvoley.jpg",
-    "comentario":"Balon oficial del mundial de Voley disputado en 2022.",
-    "precio":"400"
+    "type": "Voley",
+    "description": "Balon oficial 2022",
+    "price":"400",
+    "available": true,
+    "source": "imagenes/Productos/7balonvoley.jpg"
     },
 
     {
-    "id":"8",
-    "nombre": "Camiseta argentina 2022",
-    "imagen": "imagenes/Productos/8voley.jpg",
-    "comentario":"Camiseta de la seleccion argentina de voley 2019.",
-    "precio":"1100"
+    "type": "Voley",
+    "description": "Camiseta argentina 2022",
+    "price":"1100",
+    "available": true,
+    "source": "imagenes/Productos/8voley.jpg"
     },
 
     {
-    "id":"9",
-    "nombre": "Zapatillas Mizuno",
-    "imagen": "imagenes/Productos/9mizunovoley.jpg",
-    "comentario":"Ultimo modelo de zapatillas Mizuno.",
-    "precio":"1500"
+    "type": "Voley",
+    "description": "Zapatillas Mizuno",
+    "price":"1500",
+    "available": true,
+    "source": "imagenes/Productos/9mizunovoley.jpg"
     },
 
     {
-    "id":"10",
-    "nombre": "Balon oficial de Rugby",
-    "imagen": "imagenes/Productos/10pelotarugby.jpg",
-    "comentario":"Balon oficial para el torneo de selecciones disputado por los Pumas.",
-    "precio":"600"
+    "type": "Rugby",
+    "description": "Balon oficial de Rugby",
+    "price":"600",
+    "available": false,
+    "source": "imagenes/Productos/10pelotarugby.jpg"
     },
 
     {
-    "id":"11",
-    "nombre": "Camiseta de los Pumas",
-    "imagen": "imagenes/Productos/11pumas.jpg",
-    "comentario":"Camiseta oficial de los Pumas 2022.",
-    "precio":"1300"
+    "type": "Rugby",
+    "description": "Camiseta de los Pumas",
+    "price":"1300",
+    "available": true,
+    "source": "imagenes/Productos/11pumas.jpg"
     },
 
     {
-    "id":"12",
-    "nombre": "Camiseta de los All Blacks",
-    "imagen": "imagenes/Productos/12allblacksrug.jpg",
-    "comentario":"Camiseta oficial de los All Blacks 2022.",
-    "precio":"1500"
+    "type": "Rugby",
+    "description": "Camiseta de los All Blacks",
+    "price":"1500",
+    "available": true,
+    "source": "imagenes/Productos/12allblacksrug.jpg"
     }
-    
 ]
