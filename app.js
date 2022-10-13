@@ -25,7 +25,28 @@ function addToCarritoItem(e){
 
   addItemCarrito(newItem)
 }
+//desafio feach
+const tabla = document.querySelector(`.cardsnuevas`)
 
+function cargarProductos() {
+    fetch('data.json')
+        .then(respuesta => respuesta.json())
+        .then(data => {
+            data.forEach(pruducto => {
+                const row = document.createElement('tr');
+                row.innerHTML += `
+                    <td>${producto.type}</td>
+                    <td>${producto.price}</td>
+                    <td>${producto.descripcion}</td>
+                    <td>${producto.source}</td>
+                `;
+                tabla.appendChild(row);
+
+              });
+            }) 
+    }
+
+    
 //intentando aplicar toastify Js
 /*
 const agregarprodu = document.querySelector(".aplicotosty")
