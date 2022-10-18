@@ -46,6 +46,8 @@ function cargarProductos() {
             }) 
     }
 
+
+
     
 //intentando aplicar toastify Js
 /*
@@ -205,4 +207,9 @@ fetch ("/data.json")
     })
 }
 */
+
+//creamos cards
+
+let card = document.getElementById("#cardcreada")
+
 
