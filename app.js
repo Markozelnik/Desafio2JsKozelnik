@@ -210,6 +210,24 @@ fetch ("/data.json")
 
 //creamos cards
 
-let card = document.getElementById("#cardcreada")
+let card = document.getElementById("#cardcreada");
+
+nombrarray.map((x) => {
+  card.innerHTML += `
+          <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">{x.description}</h5>
+            <img src="{x.img}" class="card-img-top" alt="qatar 2022">
+            <div class="card-body">
+              <p class="card-text text-white-50 description">Balon oficial de Qatar 2022</p>
+              <h5 class="text-primary">Precio: <span class="precio">{x.price}</span></h5>
+              <div class="d-grid gap-2">
+              <button  class="aplicotosty btn btn-primary button">Añadir a Carrito</button>
+            </div>
+            </div>
+          </div>
+        </div>
+  `;
+});
 
 
