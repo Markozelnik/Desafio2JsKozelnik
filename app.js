@@ -208,25 +208,52 @@ fetch ("/data.json")
 }
 */
 
-//creamos cards
+const listapr = [
+  {
+  
+  description: "Balon oficial Qatar 2022",
+  price: 900,
+  source: "./imagenes/Productos/2pelotaqatar.jpg"
+  },
 
-let card = document.getElementById("#cardcreada");
+  { 
+    description: "Camiseta PSG 2022",
+    price: 4000,
+    source: "./imagenes/Productos/1psgcamiseta.jpg"
+  },
 
-nombrarray.map((x) => {
+  { 
+  description: "Balon oficial Qatar 2022",
+  price: 900,
+  source: "./imagenes/Productos/2pelotaqatar.jpg"
+  },
+
+  { 
+  description: "Balon oficial Qatar 2022",
+  price: 900,
+  source: "./imagenes/Productos/2pelotaqatar.jpg"
+  },
+
+
+]
+
+let card = document.getElementById("cardcreada");
+
+listapr.map((x) => {
   card.innerHTML += `
-          <div class="col d-flex justify-content-center mb-4">
-          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
-            <h5 class="card-title pt-2 text-center text-primary">{x.description}</h5>
-            <img src="{x.img}" class="card-img-top" alt="qatar 2022">
-            <div class="card-body">
-              <p class="card-text text-white-50 description">Balon oficial de Qatar 2022</p>
-              <h5 class="text-primary">Precio: <span class="precio">{x.price}</span></h5>
-              <div class="d-grid gap-2">
-              <button  class="aplicotosty btn btn-primary button">Añadir a Carrito</button>
-            </div>
-            </div>
-          </div>
-        </div>
+  <div class="col d-flex justify-content-center mb-4">
+  <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+    <h5 class="card-title pt-2 text-center text-primary">${x.description}</h5>
+    <img src="${x.source}" class="card-img-top" alt="qatar 2022">
+    <div class="card-body">
+      <p class="card-text text-white-50 description">Balon oficial de Qatar 2022</p>
+      <h5 class="text-primary">Precio: <span class="precio">$ ${x.price}</span></h5>
+      <div class="d-grid gap-2">
+      <button  class="aplicotosty btn btn-primary button">Añadir a Carrito</button>
+    </div>
+    </div>
+  </div>
+  </div>
   `;
 });
 

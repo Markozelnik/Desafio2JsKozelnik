@@ -1,97 +1,74 @@
 [
     {
-    "type": "Futbol",
+    
     "description": "Balon oficial Qatar 2022",
-    "price":"900",
-    "available": true,
-    "source": "imagenes/Productos/2pelotaqatar.jpg"
+    "price": 900,
+    "source": "./imagenes/Productos/2pelotaqatar.jpg"
     },
 
     {
-    "type": "Futbol",
     "description": "Camiseta PSG 2022",
-    "price":"4000",
-    "available": true,
-    "source": "imagenes/Productos/1psgcamiseta.jpg"
+    "price": 4000,
+    "source": "./imagenes/Productos/1psgcamiseta.jpg"
     },
 
     {
-    "type": "Futbol",
     "description": "Botines Nike Legend",
-    "price":"500",
-    "available": true,
-    "source": "imagenes/Productos/3botineNikeLegendAcademy.jpg"
+    "price": 500,
+    "source": "./imagenes/Productos/3botineNikeLegendAcademy.jpg"
     },
 
     {
-    "type": "Basquetball",
     "description": "Balon NBA 2022",
-    "price":"800",
-    "available": false,
-    "source": "imagenes/Productos/4balonnba.jpg"
+    "price": 800,
+    "source": "./imagenes/Productos/4balonnba.jpg"
     },
 
     {
-    "type": "Basquetball",
     "description": "Camiseta Golden State",
-    "price":"2000",
-    "available": true,
-    "source": "imagenes/Productos/5goldenstate.jpg"
+    "price": 2000,
+    "source": "./imagenes/Productos/5goldenstate.jpg"
     },
 
     {
-    "type": "Basquetball",
     "description": "Nike Precision Iii",
-    "price":"2500",
-    "available": true,
-    "source": "imagenes/Productos/6Nike Precisionnba.jpg"
+    "price": 2500,
+    "source": "./imagenes/Productos/6Nike Precisionnba.jpg"
     },
 
     {
-    "type": "Voley",
     "description": "Balon oficial 2022",
-    "price":"400",
-    "available": true,
-    "source": "imagenes/Productos/7balonvoley.jpg"
+    "price": 400,
+    "source": "./imagenes/Productos/7balonvoley.jpg"
     },
 
     {
-    "type": "Voley",
     "description": "Camiseta argentina 2022",
-    "price":"1100",
-    "available": true,
-    "source": "imagenes/Productos/8voley.jpg"
+    "price": 1100,
+    "source": "./imagenes/Productos/8voley.jpg"
     },
 
     {
-    "type": "Voley",
     "description": "Zapatillas Mizuno",
-    "price":"1500",
-    "available": true,
-    "source": "imagenes/Productos/9mizunovoley.jpg"
+    "price": 1500,
+    "source": "./imagenes/Productos/9mizunovoley.jpg"
     },
 
     {
-    "type": "Rugby",
     "description": "Balon oficial de Rugby",
-    "price":"600",
-    "available": false,
-    "source": "imagenes/Productos/10pelotarugby.jpg"
+    "price": 600,
+    "source": "./imagenes/Productos/10pelotarugby.jpg"
     },
 
     {
-    "type": "Rugby",
     "description": "Camiseta de los Pumas",
-    "price":"1300",
-    "available": true,
-    "source": "imagenes/Productos/11pumas.jpg"
+    "price": 1300,
+    "source": "./imagenes/Productos/11pumas.jpg"
     },
 
     {
-    "type": "Rugby",
     "description": "Camiseta de los All Blacks",
-    "price":"1500",
-    "available": true,
-    "source": "imagenes/Productos/12allblacksrug.jpg"
+    "price":1500,
+    "source": "./imagenes/Productos/12allblacksrug.jpg"
     }
 ]
