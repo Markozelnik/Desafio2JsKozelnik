@@ -1,325 +1,156 @@
-const productoDOM = document.querySelector(".productos__center")
-const carritoDOM = document.querySelector(".carrito")
-const carritoCenter = document.querySelector(".carrito__center")
-const openCarrito = document.querySelector(".carrito__icon")
-const closeCarrito = document.querySelector(".close__carrito")
-const overlay = document.querySelector(".carrito__overlay")
-const carritoTotal = document.querySelector(".carrito__total")
-const clearCarritoBtn = document.querySelector(".clear__carrito")
-const itemTotales =document.querySelector(".item__total")
-const detalles = document.getElementById('detalles')
+let stockProductos = [
+    {id: 1, nombre: "Buzo 1", tipo: "buzo", cantidad: 1, desc: "Un buzo que re va con vos", precio: 1200, talle: "L", img: './img/buzo.jpg'},
+    {id: 2, nombre: "Buzo 2", tipo: "buzo", cantidad: 1, desc: "Un buzo que re va con vos", precio: 1100, talle: "L", img: './img/buzo.jpg'},
+    {id: 3, nombre: "Buzo 3", tipo: "buzo", cantidad: 1, desc: "Un buzo que re va con vos", precio: 1200, talle: "M", img: './img/buzo.jpg'},
+    {id: 4, nombre: "Buzo 4", tipo: "buzo", cantidad: 1, desc: "Un buzo que re va con vos", precio: 1400, talle: "M", img: './img/buzo.jpg'},
+    {id: 5, nombre: "Buzo 5", tipo: "buzo", cantidad: 1, desc: "Un buzo que re va con vos", precio: 1200, talle: "S", img: './img/buzo.jpg'},
+    {id: 6, nombre: "Buzo 6", tipo: "buzo", cantidad: 1, desc: "Un buzo que re va con vos", precio: 1500, talle: "S", img: './img/buzo.jpg'},
+    {id: 7, nombre: "Remera 1", tipo: "remera", cantidad: 1, desc: "Una remera que re va con vos", precio: 500, talle: "L", img: './img/remera.jpg'},
+    {id: 8, nombre: "Remera 2", tipo: "remera", cantidad: 1, desc: "Una remera que re va con vos", precio: 500, talle: "L", img: './img/remera.jpg'},
+    {id: 9, nombre: "Remera 3", tipo: "remera", cantidad: 1, desc: "Una remera que re va con vos", precio: 500, talle: "M", img: './img/remera.jpg'},
+    {id: 10, nombre: "Remera 4", tipo: "remera", cantidad: 1, desc: "Una remera que re va con vos", precio: 700, talle: "M", img: './img/remera.jpg'},
+    {id: 11, nombre: "Remera 5", tipo: "remera", cantidad: 1,desc: "Una remera que re va con vos", precio: 700, talle: "S", img: './img/remera.jpg'},
+    {id: 12, nombre: "Remera 6", tipo: "remera", cantidad: 1, desc: "Una remera que re va con vos", precio: 700, talle: "S", img: './img/remera.jpg'},
+    {id: 13, nombre: "Camisa 1", tipo: "camisa", cantidad: 1, desc: "Una camisa que re va con vos", precio: 900, talle: "L", img: './img/camisa.jpg'},
+    {id: 14, nombre: "Camisa 2", tipo: "camisa", cantidad: 1, desc: "Una camisa que re va con vos", precio: 1400, talle: "S", img: './img/camisa.jpg'},
+    {id: 15, nombre: "Camisa 3", tipo: "camisa", cantidad: 1, desc: "Una camisa que re va con vos", precio: 7000, talle: "L", img: './img/camisa.jpg'},
+    {id: 16, nombre: "Camisa 4", tipo: "camisa", cantidad: 1, desc: "Una camisa que re va con vos", precio: 777, talle: "S", img: './img/camisa.jpg'},
+    {id: 17, nombre: "Camisa 5", tipo: "camisa", cantidad: 1, desc: "Una camisa que re va con vos", precio: 234, talle: "S", img: './img/camisa.jpg'},
+    {id: 18, nombre: "Camisa 6", tipo: "camisa", cantidad: 1, desc: "Una camisa que re va con vos", precio: 155600, talle: "M", img: './img/camisa.jpg'},
+    {id: 19, nombre: "Pantalon 1", tipo: "pantalon", cantidad: 1, desc: "Una pantalon que re va con vos", precio: 1600, talle: "L", img: './img/pantalon.jpg'},
+    {id: 20, nombre: "Pantalon 2", tipo: "pantalon", cantidad: 1, desc: "Una pantalon que re va con vos", precio: 3200, talle: "L", img: './img/pantalon.jpg'},
+    {id: 21, nombre: "Pantalon 3", tipo: "pantalon", cantidad: 1, desc: "Una pantalon que re va con vos", precio: 2300, talle: "M", img: './img/pantalon.jpg'},
+    {id: 22, nombre: "Pantalon 4", tipo: "pantalon", cantidad: 1, desc: "Una pantalon que re va con vos", precio: 5600, talle: "M", img: './img/pantalon.jpg'},
+    {id: 23, nombre: "Pantalon 5", tipo: "pantalon", cantidad: 1, desc: "Una pantalon que re va con vos", precio: 1700, talle: "S", img: './img/pantalon.jpg'},
+    {id: 24, nombre: "Pantalon 6", tipo: "pantalon", cantidad: 1, desc: "Una pantalon que re va con vos", precio: 800, talle: "S", img: './img/pantalon.jpg'},
+]
+const contenedorProductos = document.getElementById('contenedor-productos')
 
-let carrito = [];
-let buttonDOM = [];
+//TERCER PASO
 
-class UI {
+const contenedorCarrito = document.getElementById('carrito-contenedor')
+//SEXTO PASO
+const botonVaciar = document.getElementById('vaciar-carrito')
+//SEXTIMO PASO, MODIFICAR LOS CONTADORES
+const contadorCarrito = document.getElementById('contadorCarrito')
 
-	detalleProducto(id){
-		const filtroDato = productos.filter(item => item.id == id)
-		let result = ""
-		filtroDato.forEach(producto => {
-			result += `
-			<article class="detalle-grid">
-				<img src=${producto.image} alt="${producto.title}" class="img-fluid">
-				<div class="detalles-content">
-					<h3>${producto.title}</h3>
-					<div class="rating">
-						<span>
-							<i class="bx bxs-star"></i>
-						</span>
-						<span>
-							<i class="bx bxs-star"></i>
-						</span>
-						<span>
-							<i class="bx bxs-star"></i>
-						</span>
-						<span>
-							<i class="bx bxs-star"></i>
-						</span>
-						<span>
-							<i class="bx bx-star"></i>
-						</span>
-					</div>
-						<p class="price"><b>Precio: </b> $${producto.price}</p>
-						<p class="description">
-							<b>Descripcion: </b> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quae ad ex sint expedita perspiciatis odit eligendi! Et quia ex aperiam dolorum sunt omnis maiores. Repudiandae delectus iste exercitationem vel?</span>
-						</p>
-						<p class="description">
-							<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptates consequuntur in assumenda odit hic, aut cupiditate dolorem aspernatur! Quibusdam iusto magnam vero maxime quisquam voluptatibus minima aliquam molestias, iure ratione commodi, reiciendis quasi.</span>
-						</p>
-						<div class="bottom">
-							<div class="btn__group">
-								<button class="btn addToCart" data-id=${producto.id}>Añadir carrito</button>
-							</div>
-						</div>
-				</div>
-			</article>
-			`
-		});
-		detalles.innerHTML = result;
-	}
+//OCTAVO PASO
+const cantidad = document.getElementById('cantidad')
+const precioTotal = document.getElementById('precioTotal')
+const cantidadTotal = document.getElementById('cantidadTotal')
 
-	renderProductos(productos){
-		let result = ""
-		productos.forEach((producto) =>{
-			result += `
-			<div class="producto">
-			<div class="image__container">
-			<img src=${producto.image} alt="">
-		</div>
-          <div class="producto__footer">
-            <h1>${producto.title}</h1>
-            <div class="rating">
-              <span>
-                <i class="bx bxs-star"></i>
-              </span>
-              <span>
-                <i class="bx bxs-star"></i>
-              </span>
-              <span>
-                <i class="bx bxs-star"></i>
-              </span>
-              <span>
-                <i class="bx bxs-star"></i>
-              </span>
-              <span>
-                <i class="bx bx-star"></i>
-              </span>
-            </div>
-            <div class="price">$${producto.price}</div>
-          </div>
-          <div class="bottom">
-            <div class="btn__group">
-              <button class="btn addToCart" data-id=${producto.id}>Añadir carrito</button>
-              <a href="producto-detalles.html?id=${producto.id}" class="btn view">Vista</a>
-            </div>
-          </div>
-        </div>
-				`
-		});
-		productoDOM.innerHTML = result
-	}
+let carrito = []
 
-	getButtons(){
-		const buttons = [...document.querySelectorAll(".addToCart")];
-		buttonDOM = buttons;
-		buttons.forEach((button)=> {
-			const id = button.dataset.id;
-			const inCart = carrito.find(item => item.id === parseInt(id, 10));
-
-			if(inCart){
-				button.innerHTML = "En el carrito";
-				button.disabled = true;
-			}
-			button.addEventListener("click", e =>{
-				e.preventDefault();
-				e.target.innerHTML = "En el carrito";
-				e.target.disabled = true;
-				
-
-				// GET productos al carrito
-				const carritoItem = {...Storage.getProductos(id), cantidad: 1}
-
-				//agregamos el producto al carrito
-				carrito = [...carrito, carritoItem]
-
-				//Guardamos el carrito al localstorage
-				Storage.saveCart(carrito)
-
-				//Set cart values
-				this.setItemValues(carrito)
-				this.addCarritoItem(carritoItem)
-				//Show al carrito
-			})
-		})
-	}
-
-	setItemValues(carrito){
-		let tempTotal = 0;
-		let itemTotal = 0;
-		carrito.map(item => {
-			tempTotal += item.price * item.cantidad;
-			itemTotal += item.cantidad;
-		});
-		carritoTotal.innerText = parseFloat(tempTotal.toFixed(2));
-		itemTotales.innerText = itemTotal
-	}
-
-	addCarritoItem({image, price, title, id}){
-		const div = document.createElement("div")
-		div.classList.add("carrito__item")
-
-		div.innerHTML = `
-		<img src=${image} alt=${title}>
-		<div>
-			<h3>${title}</h3>
-			<p class="price">$${price}</p>
-		</div>
-		<div>
-			<span class="increase" data-id=${id}>
-				<i class="bx bxs-up-arrow"></i>
-			</span>
-			<p class="item__cantidad">1</p>
-			<span class="decrease" data-id=${id}>
-				<i class="bx bxs-down-arrow"></i>
-			</span>
-		</div>
-		<div>
-			<span class="remove__item" data-id=${id}>
-				<i class="bx bx-trash"></i>
-			</span>
-		</div>
-		`
-		carritoCenter.appendChild(div)
-	}
-	show(){
-		carritoDOM.classList.add("show")
-		overlay.classList.add("show")
-	}
-	hide(){
-		carritoDOM.classList.remove("show")
-		overlay.classList.remove("show")
-	}
-	setAPP(){
-		carrito = Storage.getCart()
-		this.setItemValues(carrito)
-		this.populate(carrito)
-		openCarrito.addEventListener("click", this.show)
-		closeCarrito.addEventListener("click", this.hide)
-	}
-	populate(carrito){
-		carrito.forEach(item => this.addCarritoItem(item))
-	}
-	cartLogic(){
-		clearCarritoBtn.addEventListener("click", () =>{
-			this.clearCarrito()
-			this.hide()
-		});
-
-		carritoCenter.addEventListener("click", e =>{
-			const target = e.target.closest("span")
-			const targetElement = target.classList.contains("remove__item");
-			console.log(target)
-			console.log(targetElement)
-			if(!target) return
-			if(targetElement){
-				const id = parseInt(target.dataset.id);
-				this.removeItem(id)
-				carritoCenter.removeChild(target.parentElement.parentElement)
-			}else if(target.classList.contains("increase")){
-				const id = parseInt(target.dataset.id, 10);
-				let tempItem = carrito.find(item => item.id === id);
-				tempItem.cantidad++;
-				Storage.saveCart(carrito)
-				this.setItemValues(carrito)
-				target.nextElementSibling.innerText = tempItem.cantidad
-			}else if(target.classList.contains("decrease")){
-				const id = parseInt(target.dataset.id, 10);
-				let tempItem = carrito.find(item => item.id === id);
-				tempItem.cantidad--;
-
-				if(tempItem.cantidad > 0){
-					Storage.saveCart(carrito);
-					this.setItemValues(carrito);
-					target.previousElementSibling.innerText = tempItem.cantidad;
-				}else{
-					this.removeItem(id);
-					carritoCenter.removeChild(target.parentElement.parentElement)
-				}
-			}
-		});
-	}
-	clearCarrito(){
-		const cartItems = carrito.map(item => item.id)
-		cartItems.forEach(id => this.removeItem(id))
-
-		while(carritoCenter.children.length > 0){
-			carritoCenter.removeChild(carritoCenter.children[0])
-		}
-	}
-	removeItem(id){
-		carrito = carrito.filter(item => item.id !== id);
-		this.setItemValues(carrito)
-		Storage.saveCart(carrito)
-		let button = this.singleButton(id);
-		if(button){
-			button.disabled = false;
-			button.innerText = "Añadir carrito"
-		}
-	}
-	singleButton(id){
-		return buttonDOM.find(button => parseInt(button.dataset.id) === id)
-	}
-}
-
-
-
-class Storage {
-	static saveProduct(obj){
-		localStorage.setItem("productos", JSON.stringify(obj))
-	}
-	static saveCart(carrito){
-		localStorage.setItem("carrito", JSON.stringify(carrito))
-	}
-	static getProductos(id){
-		const producto = JSON.parse(localStorage.getItem("productos"))
-		return producto.find(product =>product.id === parseFloat(id, 10))
-	}
-	static getCart(){
-		return localStorage.getItem("carrito") ? JSON.parse(localStorage.getItem("carrito")) : [];
-	}
-}
-
-class Productos {
-  async getProductos() {
-    try {
-			const result = await fetch("productos.json")
-			const data = await result.json()
-			const productos = data.items
-			return productos
-		}catch(err){
-			console.log(err)
-		}
-  }
-}
-
-let category = "";
-let productos  = [];
-
-function categoryValue(){
-	const ui = new UI();
-
-	category = document.getElementById("category").value
-	if(category.length > 0){
-		const producto = productos.filter(regx => regx.category === category)
-		ui.renderProductos(producto)
-		ui.getButtons();
-	}else{
-		ui.renderProductos(productos)
-		ui.getButtons();
-	
-	}
-}
-
-const query = new URLSearchParams(window.location.search)
-let id = query.get('id')
-
-document.addEventListener("DOMContentLoaded", async () =>{
-	const productosLista = new Productos();
-	const ui = new UI();
-
-	ui.setAPP()
-
-	productos = await productosLista.getProductos()
-	if(id){
-		ui.detalleProducto(id)
-		Storage.saveProduct(productos)
-		ui.getButtons();
-		ui.cartLogic();
-	}else{
-		ui.renderProductos(productos)
-		Storage.saveProduct(productos)
-		ui.getButtons();
-		ui.cartLogic();
-	}
+document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('carrito')){
+        carrito = JSON.parse(localStorage.getItem('carrito'))
+        actualizarCarrito()
+    }
 })
+//SEXTO PASO
+botonVaciar.addEventListener('click', () => {
+    carrito.length = 0
+    actualizarCarrito()
+})
+
+//PRIMER PRIMER PASO, INYECTAR EL HTML
+stockProductos.forEach((producto) => {
+    const div = document.createElement('div')
+    div.classList.add('producto')
+    div.innerHTML = `
+    <img src=${producto.img} alt= "">
+    <h3>${producto.nombre}</h3>
+    <p>${producto.desc}</p>
+    <p>Talle: ${producto.talle}</p>
+    <p class="precioProducto">Precio:$ ${producto.precio}</p>
+    <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
+    `
+    contenedorProductos.appendChild(div)
+
+    //2 - SEGUNDO PASO, LUEGO DE QUE INSERTEMOS EL HTML EN EL DOM:
+    const boton = document.getElementById(`agregar${producto.id}`)
+    //Por cada elemento de mi array, creo un div, lo cuelgo, le pongo un id particular, una vez colgado
+    //le hago un get element by id (el de agregar) Obtengo el elemento y a dicho elemento le agregamos
+    //el add event listener
+
+    boton.addEventListener('click', () => {
+        //esta funcion ejecuta el agregar el carrito con la id del producto
+        agregarAlCarrito(producto.id)
+        //
+    })
+})
+
+// 1- PRIMER PASO
+
+//AGREGAR AL CARRITO
+const agregarAlCarrito = (prodId) => {
+
+    //PARA AUMENTAR LA CANTIDAD Y QUE NO SE REPITA
+    const existe = carrito.some (prod => prod.id === prodId) //comprobar si el elemento ya existe en el carro
+
+    if (existe){ //SI YA ESTÁ EN EL CARRITO, ACTUALIZAMOS LA CANTIDAD
+        const prod = carrito.map (prod => { //creamos un nuevo arreglo e iteramos sobre cada curso y cuando
+            // map encuentre cual es el q igual al que está agregado, le suma la cantidad
+            if (prod.id === prodId){
+                prod.cantidad++
+            }
+        })
+    } else { //EN CASO DE QUE NO ESTÉ, AGREGAMOS EL CURSO AL CARRITO
+        const item = stockProductos.find((prod) => prod.id === prodId)//Trabajamos con las ID
+        //Una vez obtenida la ID, lo que haremos es hacerle un push para agregarlo al carrito
+        carrito.push(item)
+    }
+    //Va a buscar el item, agregarlo al carrito y llama a la funcion actualizarCarrito, que recorre
+    //el carrito y se ve.
+    actualizarCarrito() //LLAMAMOS A LA FUNCION QUE CREAMOS EN EL TERCER PASO. CADA VEZ Q SE 
+    //MODIFICA EL CARRITO
+}
+//agregarAlCarrito(1) //Le pasamos el ID por parametro. Tenemos que asigarle como evento esta funcion al boton
+//con el id de su producto correspondiente
+
+// 5 - QUINTO PASO
+const eliminarDelCarrito = (prodId) => {
+    const item = carrito.find((prod) => prod.id === prodId)
+
+    const indice = carrito.indexOf(item) //Busca el elemento q yo le pase y nos devuelve su indice.
+
+    carrito.splice(indice, 1) //Le pasamos el indice de mi elemento ITEM y borramos 
+    // un elemento 
+    actualizarCarrito() //LLAMAMOS A LA FUNCION QUE CREAMOS EN EL TERCER PASO. CADA VEZ Q SE 
+    //MODIFICA EL CARRITO
+    console.log(carrito)
+}
+
+const actualizarCarrito = () => {
+    //4- CUARTO PASO
+    //LOS APPENDS SE VAN ACUMULANDO CON LO QE HABIA ANTES
+    contenedorCarrito.innerHTML = "" //Cada vez que yo llame a actualizarCarrito, lo primero q hago
+    //es borrar el nodo. Y despues recorro el array lo actualizo de nuevo y lo rellena con la info
+    //actualizado
+    //3 - TERCER PASO. AGREGAR AL MODAL. Recorremos sobre el array de carrito.
+
+    //Por cada producto creamos un div con esta estructura y le hacemos un append al contenedorCarrito (el modal)
+    carrito.forEach((prod) => {
+        const div = document.createElement('div')
+        div.className = ('productoEnCarrito')
+        div.innerHTML = `
+        <p>${prod.nombre}</p>
+        <p>Precio:$${prod.precio}</p>
+        <p>Cantidad: <span id="cantidad">${prod.cantidad}</span></p>
+        <button onclick="eliminarDelCarrito(${prod.id})" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+        `
+
+        contenedorCarrito.appendChild(div)
+        
+        localStorage.setItem('carrito', JSON.stringify(carrito))
+
+    })
+    //SEPTIMO PASO
+    contadorCarrito.innerText = carrito.length // actualizamos con la longitud del carrito.
+    //OCTAVO PASO
+    console.log(carrito)
+    precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
+    //Por cada producto q recorro en mi carrito, al acumulador le suma la propiedad precio, con el acumulador
+    //empezando en 0.
+
+}
