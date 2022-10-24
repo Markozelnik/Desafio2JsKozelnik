@@ -1,28 +1,16 @@
 let stockProductos = [
-    {id: 1, nombre: "Buzo 1", tipo: "buzo", cantidad: 1, desc: "Un buzo que re va con vos", precio: 1200, talle: "L", img: './img/buzo.jpg'},
-    {id: 2, nombre: "Buzo 2", tipo: "buzo", cantidad: 1, desc: "Un buzo que re va con vos", precio: 1100, talle: "L", img: './img/buzo.jpg'},
-    {id: 3, nombre: "Buzo 3", tipo: "buzo", cantidad: 1, desc: "Un buzo que re va con vos", precio: 1200, talle: "M", img: './img/buzo.jpg'},
-    {id: 4, nombre: "Buzo 4", tipo: "buzo", cantidad: 1, desc: "Un buzo que re va con vos", precio: 1400, talle: "M", img: './img/buzo.jpg'},
-    {id: 5, nombre: "Buzo 5", tipo: "buzo", cantidad: 1, desc: "Un buzo que re va con vos", precio: 1200, talle: "S", img: './img/buzo.jpg'},
-    {id: 6, nombre: "Buzo 6", tipo: "buzo", cantidad: 1, desc: "Un buzo que re va con vos", precio: 1500, talle: "S", img: './img/buzo.jpg'},
-    {id: 7, nombre: "Remera 1", tipo: "remera", cantidad: 1, desc: "Una remera que re va con vos", precio: 500, talle: "L", img: './img/remera.jpg'},
-    {id: 8, nombre: "Remera 2", tipo: "remera", cantidad: 1, desc: "Una remera que re va con vos", precio: 500, talle: "L", img: './img/remera.jpg'},
-    {id: 9, nombre: "Remera 3", tipo: "remera", cantidad: 1, desc: "Una remera que re va con vos", precio: 500, talle: "M", img: './img/remera.jpg'},
-    {id: 10, nombre: "Remera 4", tipo: "remera", cantidad: 1, desc: "Una remera que re va con vos", precio: 700, talle: "M", img: './img/remera.jpg'},
-    {id: 11, nombre: "Remera 5", tipo: "remera", cantidad: 1,desc: "Una remera que re va con vos", precio: 700, talle: "S", img: './img/remera.jpg'},
-    {id: 12, nombre: "Remera 6", tipo: "remera", cantidad: 1, desc: "Una remera que re va con vos", precio: 700, talle: "S", img: './img/remera.jpg'},
-    {id: 13, nombre: "Camisa 1", tipo: "camisa", cantidad: 1, desc: "Una camisa que re va con vos", precio: 900, talle: "L", img: './img/camisa.jpg'},
-    {id: 14, nombre: "Camisa 2", tipo: "camisa", cantidad: 1, desc: "Una camisa que re va con vos", precio: 1400, talle: "S", img: './img/camisa.jpg'},
-    {id: 15, nombre: "Camisa 3", tipo: "camisa", cantidad: 1, desc: "Una camisa que re va con vos", precio: 7000, talle: "L", img: './img/camisa.jpg'},
-    {id: 16, nombre: "Camisa 4", tipo: "camisa", cantidad: 1, desc: "Una camisa que re va con vos", precio: 777, talle: "S", img: './img/camisa.jpg'},
-    {id: 17, nombre: "Camisa 5", tipo: "camisa", cantidad: 1, desc: "Una camisa que re va con vos", precio: 234, talle: "S", img: './img/camisa.jpg'},
-    {id: 18, nombre: "Camisa 6", tipo: "camisa", cantidad: 1, desc: "Una camisa que re va con vos", precio: 155600, talle: "M", img: './img/camisa.jpg'},
-    {id: 19, nombre: "Pantalon 1", tipo: "pantalon", cantidad: 1, desc: "Una pantalon que re va con vos", precio: 1600, talle: "L", img: './img/pantalon.jpg'},
-    {id: 20, nombre: "Pantalon 2", tipo: "pantalon", cantidad: 1, desc: "Una pantalon que re va con vos", precio: 3200, talle: "L", img: './img/pantalon.jpg'},
-    {id: 21, nombre: "Pantalon 3", tipo: "pantalon", cantidad: 1, desc: "Una pantalon que re va con vos", precio: 2300, talle: "M", img: './img/pantalon.jpg'},
-    {id: 22, nombre: "Pantalon 4", tipo: "pantalon", cantidad: 1, desc: "Una pantalon que re va con vos", precio: 5600, talle: "M", img: './img/pantalon.jpg'},
-    {id: 23, nombre: "Pantalon 5", tipo: "pantalon", cantidad: 1, desc: "Una pantalon que re va con vos", precio: 1700, talle: "S", img: './img/pantalon.jpg'},
-    {id: 24, nombre: "Pantalon 6", tipo: "pantalon", cantidad: 1, desc: "Una pantalon que re va con vos", precio: 800, talle: "S", img: './img/pantalon.jpg'},
+    {id: 1, nombre: "Balon oficial Qatar 2022", tipo: "futbol", cantidad: 1, desc: "Pelota de futbol", precio: 900, img: './imagenes/Productos/2pelotaqatar.jpg'},
+    {id: 2, nombre: "Camiseta PSG 2022", tipo: "futbol", cantidad: 1, desc: "Camiseta de futbol", precio: 4000, img: './imagenes/Productos/1psgcamiseta.jpg'},
+    {id: 3, nombre: "Botines Nike Legend", tipo: "futbol", cantidad: 1, desc: "Botines de futbol", precio: 500, img: './imagenes/Productos/3botineNikeLegendAcademy.jpg'},
+    {id: 4, nombre: "Balon Oficial NBA 2022", tipo: "basquetball", cantidad: 1, desc: "Pelota de basquetball", precio: 800, img: './imagenes/Productos/4balonnba.jpg'},
+    {id: 5, nombre: "Camiseta Golden State 2022", tipo: "basquetball", cantidad: 1, desc: "Camiseta esquipo NBA 2022", precio: 2000, img: './imagenes/Productos/5goldenstate.jpg'},
+    {id: 6, nombre: "Nike Precision Iii  Raptors", tipo: "basquetball", cantidad: 1, desc: "Botines con tapones para pasto", precio: 2500, img: './imagenes/Productos/6NikePrecisionnba.jpg'},
+    {id: 7, nombre: "Balon oficial Voley 2022", tipo: "voley", cantidad: 1, desc: "Pelota de voley oficial de la temporada 2022 ", precio: 400, img: './imagenes/Productos/7balonvoley.jpg'},
+    {id: 8, nombre: "Camiseta argentina 2022", tipo: "voley", cantidad: 1, desc: "Camiseta seleccion argentina de voley", precio: 1100, img: './imagenes/Productos/8voley.jpg'},
+    {id: 9, nombre: "Zapatillas Mizuno 2022", tipo: "voley", cantidad: 1, desc: "Zapatillas para deportes indor ", precio: 1500, img: './imagenes/Productos/9mizunovoley.jpg'},
+    {id: 10, nombre: "Balon oficial de Rugby", tipo: "rugby", cantidad: 1, desc: "Balon oficial de la temporada de rugby", precio: 600, img: './imagenes/Productos/10pelotarugby.jpg'},
+    {id: 11, nombre: "Camiseta de los Pumas", tipo: "rugby", cantidad: 1,desc: "Camiseta oficial de los pumas 2022", precio: 1300, img: './imagenes/Productos/11pumas.jpg'},
+    {id: 12, nombre: "Camiseta de los All Blacks", tipo: "rugby", cantidad: 1, desc: "Camiseta oficial de los All Blacks 2022", precio: 1500, img: './imagenes/Productos/12allblacksrug.jpg'},
 ]
 const contenedorProductos = document.getElementById('contenedor-productos')
 
@@ -61,7 +49,6 @@ stockProductos.forEach((producto) => {
     <img src=${producto.img} alt= "">
     <h3>${producto.nombre}</h3>
     <p>${producto.desc}</p>
-    <p>Talle: ${producto.talle}</p>
     <p class="precioProducto">Precio:$ ${producto.precio}</p>
     <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
     `
@@ -175,3 +162,13 @@ modalCarrito.addEventListener('click', (event) => {
     event.stopPropagation() //cuando clickeo sobre el modal se finaliza la propagacion del click a los elementos
     //padre
 })
+
+
+/*entrega librerias*/
+// tengo que ver como hago para vaciar la suma una vez que se aprete el button de Comprar
+const boton = document.querySelector (".botonani")
+
+boton.addEventListener ("click", () =>{
+  swal("Excelente!", "Su compra fue realizada con exito!", "success");
+  })
+

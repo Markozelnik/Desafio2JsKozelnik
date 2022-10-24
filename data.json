@@ -1,85 +1,109 @@
 [
     {
     "id":1,
-    "description": "Balon oficial Qatar 2022",
-    "price": 900,
+    "nombre":"Balon oficial Qatar 2022",
+    "tipo":"futbol",
+    "desc": "Pelota de futbol",
+    "precio": 900,
     "source": "./imagenes/Productos/2pelotaqatar.jpg"
     },
 
     {
     "id":2,
-    "description": "Camiseta PSG 2022",
-    "price": 4000,
+    "nombre":"Camiseta PSG 2022",
+    "tipo":"futbol",
+    "desc": "Camiseta de futbol",
+    "precio": 4000,
     "source": "./imagenes/Productos/1psgcamiseta.jpg"
     },
 
     {
     "id":3,
-    "description": "Botines Nike Legend",
-    "price": 500,
+    "nombre":"Botines Nike Legend",
+    "tipo":"futbol",
+    "desc": "Botines de futbol",
+    "precio": 500,
     "source": "./imagenes/Productos/3botineNikeLegendAcademy.jpg"
     },
 
     {
     "id":4,
-    "description": "Balon NBA 2022",
-    "price": 800,
+    "nombre":"Balon Oficial NBA 2022",
+    "tipo":"basquetball",
+    "desc": "Pelota de basquetball",
+    "precio": 800,
     "source": "./imagenes/Productos/4balonnba.jpg"
     },
 
     {
     "id":5,
-    "description": "Camiseta Golden State",
-    "price": 2000,
+    "nombre":"Camiseta Golden State 2022",
+    "tipo":"basquetball",
+    "desc": "Camiseta esquipo NBA 2022",
+    "precio": 2000,
     "source": "./imagenes/Productos/5goldenstate.jpg"
     },
 
     {
     "id":6,
-    "description": "Nike Precision Iii",
-    "price": 2500,
-    "source": "./imagenes/Productos/6Nike Precisionnba.jpg"
+    "nombre":"Nike Precision Iii  Raptors",
+    "tipo":"basquetball",
+    "desc": "Botines con tapones para pasto",
+    "precio": 2500,
+    "source": "./imagenes/Productos/6NikePrecisionnba.jpg"
     },
 
     {
     "id":7,
-    "description": "Balon oficial 2022",
-    "price": 400,
+    "nombre":"Balon oficial Voley 2022",
+    "tipo":"voley",
+    "desc": "Pelota de voley oficial de la temporada 2022 ",
+    "precio": 400,
     "source": "./imagenes/Productos/7balonvoley.jpg"
     },
 
     {
     "id":8,
-    "description": "Camiseta argentina 2022",
-    "price": 1100,
+    "nombre":"Camiseta argentina 2022",
+    "tipo":"voley",
+    "desc": "Camiseta seleccion argentina de voley",
+    "precio": 1100,
     "source": "./imagenes/Productos/8voley.jpg"
     },
 
     {
     "id":9,
-    "description": "Zapatillas Mizuno",
-    "price": 1500,
+    "nombre":"Zapatillas Mizuno 2022",
+    "tipo":"voley",
+    "desc": "Zapatillas para deportes indor",
+    "precio": 1500,
     "source": "./imagenes/Productos/9mizunovoley.jpg"
     },
 
     {
     "id":10,
-    "description": "Balon oficial de Rugby",
-    "price": 600,
+    "nombre":"Balon oficial de Rugby",
+    "tipo":"rugby",
+    "desc": "Balon oficial de la temporada de rugby",
+    "precio": 600,
     "source": "./imagenes/Productos/10pelotarugby.jpg"
     },
 
     {
     "id":11,
-    "description": "Camiseta de los Pumas",
-    "price": 1300,
+    "nombre":"Camiseta de los Pumas",
+    "tipo":"rugby",
+    "desc": "Camiseta oficial de los pumas 2022",
+    "precio": 1300,
     "source": "./imagenes/Productos/11pumas.jpg"
     },
 
     {
     "id":12,
-    "description": "Camiseta de los All Blacks",
-    "price":1500,
+    "nombre":"Camiseta de los All Blacks",
+    "tipo":"rugby",
+    "desc": "Camiseta oficial de los All Blacks 2022",
+    "precio":1500,
     "source": "./imagenes/Productos/12allblacksrug.jpg"
     }
 ]
