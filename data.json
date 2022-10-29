@@ -3,6 +3,7 @@
     "id":1,
     "nombre":"Balon oficial Qatar 2022",
     "tipo":"futbol",
+    "cantidad":1,
     "desc": "Pelota de futbol",
     "precio": 900,
     "source": "./imagenes/Productos/2pelotaqatar.jpg"
@@ -12,6 +13,7 @@
     "id":2,
     "nombre":"Camiseta PSG 2022",
     "tipo":"futbol",
+    "cantidad":1,
     "desc": "Camiseta de futbol",
     "precio": 4000,
     "source": "./imagenes/Productos/1psgcamiseta.jpg"
@@ -21,6 +23,7 @@
     "id":3,
     "nombre":"Botines Nike Legend",
     "tipo":"futbol",
+    "cantidad":1,
     "desc": "Botines de futbol",
     "precio": 500,
     "source": "./imagenes/Productos/3botineNikeLegendAcademy.jpg"
@@ -30,6 +33,7 @@
     "id":4,
     "nombre":"Balon Oficial NBA 2022",
     "tipo":"basquetball",
+    "cantidad":1,
     "desc": "Pelota de basquetball",
     "precio": 800,
     "source": "./imagenes/Productos/4balonnba.jpg"
@@ -39,6 +43,7 @@
     "id":5,
     "nombre":"Camiseta Golden State 2022",
     "tipo":"basquetball",
+    "cantidad":1,
     "desc": "Camiseta esquipo NBA 2022",
     "precio": 2000,
     "source": "./imagenes/Productos/5goldenstate.jpg"
@@ -48,6 +53,7 @@
     "id":6,
     "nombre":"Nike Precision Iii  Raptors",
     "tipo":"basquetball",
+    "cantidad":1,
     "desc": "Botines con tapones para pasto",
     "precio": 2500,
     "source": "./imagenes/Productos/6NikePrecisionnba.jpg"
@@ -57,6 +63,7 @@
     "id":7,
     "nombre":"Balon oficial Voley 2022",
     "tipo":"voley",
+    "cantidad":1,
     "desc": "Pelota de voley oficial de la temporada 2022 ",
     "precio": 400,
     "source": "./imagenes/Productos/7balonvoley.jpg"
@@ -66,6 +73,7 @@
     "id":8,
     "nombre":"Camiseta argentina 2022",
     "tipo":"voley",
+    "cantidad":1,
     "desc": "Camiseta seleccion argentina de voley",
     "precio": 1100,
     "source": "./imagenes/Productos/8voley.jpg"
@@ -75,6 +83,7 @@
     "id":9,
     "nombre":"Zapatillas Mizuno 2022",
     "tipo":"voley",
+    "cantidad":1,
     "desc": "Zapatillas para deportes indor",
     "precio": 1500,
     "source": "./imagenes/Productos/9mizunovoley.jpg"
@@ -84,6 +93,7 @@
     "id":10,
     "nombre":"Balon oficial de Rugby",
     "tipo":"rugby",
+    "cantidad":1,
     "desc": "Balon oficial de la temporada de rugby",
     "precio": 600,
     "source": "./imagenes/Productos/10pelotarugby.jpg"
@@ -93,6 +103,7 @@
     "id":11,
     "nombre":"Camiseta de los Pumas",
     "tipo":"rugby",
+    "cantidad":1,
     "desc": "Camiseta oficial de los pumas 2022",
     "precio": 1300,
     "source": "./imagenes/Productos/11pumas.jpg"
@@ -102,6 +113,7 @@
     "id":12,
     "nombre":"Camiseta de los All Blacks",
     "tipo":"rugby",
+    "cantidad":1,
     "desc": "Camiseta oficial de los All Blacks 2022",
     "precio":1500,
     "source": "./imagenes/Productos/12allblacksrug.jpg"

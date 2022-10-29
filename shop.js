@@ -1,16 +1,16 @@
 let stockProductos = [
-    {id: 1, nombre: "Balon oficial Qatar 2022", tipo: "futbol", cantidad: 1, desc: "Pelota de futbol", precio: 900, img: './imagenes/Productos/2pelotaqatar.jpg'},
-    {id: 2, nombre: "Camiseta PSG 2022", tipo: "futbol", cantidad: 1, desc: "Camiseta de futbol", precio: 4000, img: './imagenes/Productos/1psgcamiseta.jpg'},
-    {id: 3, nombre: "Botines Nike Legend", tipo: "futbol", cantidad: 1, desc: "Botines de futbol", precio: 500, img: './imagenes/Productos/3botineNikeLegendAcademy.jpg'},
-    {id: 4, nombre: "Balon Oficial NBA 2022", tipo: "basquetball", cantidad: 1, desc: "Pelota de basquetball", precio: 800, img: './imagenes/Productos/4balonnba.jpg'},
-    {id: 5, nombre: "Camiseta Golden State 2022", tipo: "basquetball", cantidad: 1, desc: "Camiseta esquipo NBA 2022", precio: 2000, img: './imagenes/Productos/5goldenstate.jpg'},
-    {id: 6, nombre: "Nike Precision Iii  Raptors", tipo: "basquetball", cantidad: 1, desc: "Botines con tapones para pasto", precio: 2500, img: './imagenes/Productos/6NikePrecisionnba.jpg'},
-    {id: 7, nombre: "Balon oficial Voley 2022", tipo: "voley", cantidad: 1, desc: "Pelota de voley oficial de la temporada 2022 ", precio: 400, img: './imagenes/Productos/7balonvoley.jpg'},
-    {id: 8, nombre: "Camiseta argentina 2022", tipo: "voley", cantidad: 1, desc: "Camiseta seleccion argentina de voley", precio: 1100, img: './imagenes/Productos/8voley.jpg'},
-    {id: 9, nombre: "Zapatillas Mizuno 2022", tipo: "voley", cantidad: 1, desc: "Zapatillas para deportes indor ", precio: 1500, img: './imagenes/Productos/9mizunovoley.jpg'},
-    {id: 10, nombre: "Balon oficial de Rugby", tipo: "rugby", cantidad: 1, desc: "Balon oficial de la temporada de rugby", precio: 600, img: './imagenes/Productos/10pelotarugby.jpg'},
-    {id: 11, nombre: "Camiseta de los Pumas", tipo: "rugby", cantidad: 1,desc: "Camiseta oficial de los pumas 2022", precio: 1300, img: './imagenes/Productos/11pumas.jpg'},
-    {id: 12, nombre: "Camiseta de los All Blacks", tipo: "rugby", cantidad: 1, desc: "Camiseta oficial de los All Blacks 2022", precio: 1500, img: './imagenes/Productos/12allblacksrug.jpg'},
+    {id: 1, nombre: "Balon oficial Qatar 2022", tipo: "futbol",cantidad: 1, desc: "Pelota de futbol", precio: 900, img: './imagenes/Productos/2pelotaqatar.jpg'},
+    {id: 2, nombre: "Camiseta PSG 2022", tipo: "futbol",cantidad: 1, desc: "Camiseta de futbol", precio: 4000, img: './imagenes/Productos/1psgcamiseta.jpg'},
+    {id: 3, nombre: "Botines Nike Legend", tipo: "futbol",cantidad: 1, desc: "Botines de futbol", precio: 500, img: './imagenes/Productos/3botineNikeLegendAcademy.jpg'},
+    {id: 4, nombre: "Balon Oficial NBA 2022", tipo: "basquetball",cantidad: 1, desc: "Pelota de basquetball", precio: 800, img: './imagenes/Productos/4balonnba.jpg'},
+    {id: 5, nombre: "Camiseta Golden State 2022", tipo: "basquetball",cantidad: 1, desc: "Camiseta esquipo NBA 2022", precio: 2000, img: './imagenes/Productos/5goldenstate.jpg'},
+    {id: 6, nombre: "Nike Precision Iii  Raptors", tipo: "basquetball",cantidad: 1, desc: "Botines con tapones para pasto", precio: 2500, img: './imagenes/Productos/6NikePrecisionnba.jpg'},
+    {id: 7, nombre: "Balon oficial Voley 2022", tipo: "voley",cantidad: 1, desc: "Pelota de voley oficial de la temporada 2022 ", precio: 400, img: './imagenes/Productos/7balonvoley.jpg'},
+    {id: 8, nombre: "Camiseta argentina 2022", tipo: "voley",cantidad: 1, desc: "Camiseta seleccion argentina de voley", precio: 1100, img: './imagenes/Productos/8voley.jpg'},
+    {id: 9, nombre: "Zapatillas Mizuno 2022", tipo: "voley",cantidad: 1, desc: "Zapatillas para deportes indor ", precio: 1500, img: './imagenes/Productos/9mizunovoley.jpg'},
+    {id: 10, nombre: "Balon oficial de Rugby", tipo: "rugby",cantidad: 1, desc: "Balon oficial de la temporada de rugby", precio: 600, img: './imagenes/Productos/10pelotarugby.jpg'},
+    {id: 11, nombre: "Camiseta de los Pumas", tipo: "rugby",cantidad: 1,desc: "Camiseta oficial de los pumas 2022", precio: 1300, img: './imagenes/Productos/11pumas.jpg'},
+    {id: 12, nombre: "Camiseta de los All Blacks", tipo: "rugby",cantidad: 1, desc: "Camiseta oficial de los All Blacks 2022", precio: 1500, img: './imagenes/Productos/12allblacksrug.jpg'},
 ]
 const contenedorProductos = document.getElementById('contenedor-productos')
 
@@ -42,16 +42,64 @@ botonVaciar.addEventListener('click', () => {
     actualizarCarrito()
 })
 
+
+/*
+async function fetchProductos() {
+    const response = await fetch('./data.json')
+    return await response.json()
+}
+
+// Llamo a esa función
+let catalogo = []
+
+fetchProductos().then(productos => {
+    catalogo = productos
+    mostrarCatalogo()
+})
+
+// Renderiza el catalogo de productos
+
+const seccionProductos = document.querySelector(''contenedor-productos'')
+
+
+function mostrarCatalogo() {
+    for (producto of catalogo) {
+        const { id, nombre, precio, imagen } = producto // Destructuring
+        const productoHTML = `
+            <div class="producto">
+                <img src="${imagen}"></img>
+                <h3>${nombre}</h3>
+                <p>$${precio}</p>
+                <button class="btn" onclick="sumarAlCarrito(${id})">Sumar al carrito</button>
+            </div>
+        `
+        seccionProductos.innerHTML += productoHTML
+    }
+}
+
+mostrarCatalogo()
+*/
+
 //PRIMER PRIMER PASO, INYECTAR EL HTML
+async function fetchProductos() {
+    const response = await fetch('./data.json')
+    return await response.json()
+}
+
+fetchProductos().then(productos => {
+    catalogo = productos
+    mostrarCatalogo()
+})
+
 stockProductos.forEach((producto) => {
     const div = document.createElement('div')
     div.classList.add('producto')
     div.innerHTML = `
-    <img src=${producto.img} alt= "">
+    <img src=${producto.img} alt= "${producto.nombre}">
     <h3>${producto.nombre}</h3>
     <p>${producto.desc}</p>
     <p class="precioProducto">Precio:$ ${producto.precio}</p>
-    <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
+    <button id="agregar${producto.id}" class="boton-agregar tostifyparaprduc">Agregar <i class="fas fa-shopping-cart"></i></button>
     `
     contenedorProductos.appendChild(div)
 
@@ -63,11 +111,15 @@ stockProductos.forEach((producto) => {
 
     boton.addEventListener('click', () => {
         //esta funcion ejecuta el agregar el carrito con la id del producto
+        Toastify({
+            text: "Agregado al carrito",
+            duration: 3000
+            }).showToast();;
         agregarAlCarrito(producto.id)
         //
     })
 })
-
+ 
 // 1- PRIMER PASO
 
 //AGREGAR AL CARRITO
@@ -171,5 +223,6 @@ const boton = document.querySelector (".botonani")
 
 boton.addEventListener ("click", () =>{
   swal("Excelente!", "Su compra fue realizada con exito!", "success");
+
   })
 
